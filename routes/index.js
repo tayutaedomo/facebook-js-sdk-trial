@@ -8,8 +8,12 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: title });
 });
 
-router.get('/like', function(req, res, next) {
-  res.render('like', { title : 'Like | ' + title });
+router.get('/like_jssdk', function(req, res, next) {
+  res.render('like_jssdk', { title : 'Like jssdk | ' + title });
+});
+
+router.get('/like_iframe', function(req, res, next) {
+  res.render('like_iframe', { title : 'Like iframe | ' + title });
 });
 
 

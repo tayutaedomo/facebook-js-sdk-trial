@@ -1,5 +1,8 @@
 <% layout('layout') %>
 
+<% block('meta_og').append('<meta property="og:type" content="website" />') %>
+<% block('meta_og').append('<meta property="og:title" content="' + title + '" />') %>
+
 <h2>Index</h2>
 
 <ul>

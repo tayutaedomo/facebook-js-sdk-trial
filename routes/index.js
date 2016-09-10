@@ -8,9 +8,8 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: title });
 });
 
-router.get('/hello', function(req, res, next) {
-  //res.render('hello', { title : 'Hello | ' + title });
-  res.send('hello');
+router.get('/like', function(req, res, next) {
+  res.render('like', { title : 'Like | ' + title });
 });
 
 

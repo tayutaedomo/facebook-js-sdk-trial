@@ -26,7 +26,7 @@ router.get('/auth', function(req, res, next) {
     var random = Math.random().toString();
     var hash = crypto.createHash('sha1').update(current_date + random).digest('hex');
 
-    req.session.state = hash
+    req.session.state = hash;
   }
 
   passport.authenticate('facebook', {
